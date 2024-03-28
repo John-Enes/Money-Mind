@@ -21,17 +21,6 @@
       },
       "cost": 0,
       "services": []
-    },
-    {
-      "id": "0225",
-      "name": "TESTE03",
-      "budget": "2000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
     }
   ],
   "categories": [
