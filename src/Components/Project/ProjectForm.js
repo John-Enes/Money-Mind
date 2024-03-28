@@ -11,7 +11,7 @@ function ProjectForm({ handleSubmit, projectData, btnText}){
     const[project, setProject] = useState(projectData || {})
     
     useEffect(() =>{
-        fetch('https://john-enes.github.io/APIMoneyMind/', {
+        fetch('http://localhost:5000/categories', {
         method: "GET",
         headers:{
             'Content-Type': 'application/json'

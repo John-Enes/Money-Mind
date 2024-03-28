@@ -23,7 +23,7 @@ function Projects() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('https://john-enes.github.io/APIMoneyMind/',{
+            fetch('http://localhost:5000/projects',{
                 method: 'GET',
                 headers: {
                     'Content-Type': "application/json",
@@ -38,7 +38,7 @@ function Projects() {
     }, [])
 
     function removeProject(id){
-        fetch(`https://john-enes.github.io/APIMoneyMind/${id}`,{
+        fetch(`http://localhost:5000/projects/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

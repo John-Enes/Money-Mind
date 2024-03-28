@@ -13,7 +13,7 @@ function NewProject() {
         project.cost = 0
         project.services = []
 
-        fetch('https://john-enes.github.io/APIMoneyMind/', {
+        fetch('http://localhost:5000/projects', {
             method: 'POST',
             headers:{
                 'Content-type': "application/json",

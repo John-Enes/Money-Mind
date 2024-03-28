@@ -23,7 +23,7 @@ function Project(){
 
     useEffect(() => {
         setTimeout(() => {
-            fetch(`https://john-enes.github.io/APIMoneyMind/${id}`,{
+            fetch(`http://localhost:5000/projects/${id}`,{
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function Project(){
             return false 
         }
 
-        fetch(`https://john-enes.github.io/APIMoneyMind/${project.id}`,{
+        fetch(`http://localhost:5000/projects/${project.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ function Project(){
         }
         project.cost = newCost
 
-        fetch(`https://john-enes.github.io/APIMoneyMind/${project.id}`,{
+        fetch(`http://localhost:5000/projects/${project.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ function Project(){
             cost: parseFloat(project.cost) - parseFloat(cost)
         }
     
-        fetch(`https://john-enes.github.io/APIMoneyMind/${projectUpdated.id}`,{
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
